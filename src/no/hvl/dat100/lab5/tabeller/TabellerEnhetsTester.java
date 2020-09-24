@@ -80,8 +80,8 @@ class TabellerEnhetsTester {
 	
 	@Test 
 	void testsettSammen () {
-		
 		int[] tabell = { 1, 1, 4, 6 };
+
 		
 		assertArrayEquals(tabell,Tabeller.settSammen(tabell2,tabell1));
 		assertArrayEquals(tabell1,Tabeller.settSammen(tabell3,tabell1));
