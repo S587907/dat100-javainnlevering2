@@ -21,22 +21,17 @@ public class Tabeller {
 		String stri = "[";
 		
 		for (int i = 0; i < tabell.length; i++) {
-			
 			if (i != tabell.length-1) {
-				
-				stri += tabell[i] + ",";
-				
+				stri += tabell[i] + ",";	
 		} else { 
-			
 				stri += tabell[i];
-				
-		}	
 		
-		// TODO
-		//throw new UnsupportedOperationException("tilStreng ikke implementert");
+			
+		}	
 		}
-		System.out.println(stri + "]");
-		return stri;
+		return stri + "]";
+		// TODO
+		throw new UnsupportedOperationException("tilStreng ikke implementert");	
 	}
 
 	
@@ -44,14 +39,28 @@ public class Tabeller {
 	
 	// c)
 	public static int summer(int[] tabell) {
-	
+		/*int sum = 0;
+		for(int i = 0; i < tabell.length; i++) {
+			sum += tabell[i];}
+			System.out.println("Total summen av tabellen: " + sum);
+		*/
+		
+		/*int sum = 0;
+		int j = 0;
+		while (j < tabell.length) {
+			sum += tabell[j];
+			j++;
+		}
+		System.out.println("Total summen av tabellen: " + sum);
+		*/
+		
+		
 		// TODO
 		throw new UnsupportedOperationException("summer ikke implementert");
 		
 	}
 	
-	
-	
+
 	
 	
 	// d)
