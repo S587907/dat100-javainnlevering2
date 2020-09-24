@@ -23,12 +23,12 @@ public class Tabeller {
 		for (int i = 0; i < tabell.length; i++) {
 			if (i != tabell.length-1) {
 				stri += tabell[i] + ",";	
-		} else { 
+		} 	else { 
 				stri += tabell[i];	
 		}	
 			
 		}
-		return stri +"]";
+		return stri + "]";
 		// TODO
 		//throw new UnsupportedOperationException("tilStreng ikke implementert");	
 	}
