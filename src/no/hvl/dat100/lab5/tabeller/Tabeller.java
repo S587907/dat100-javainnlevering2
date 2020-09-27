@@ -3,7 +3,7 @@ package no.hvl.dat100.lab5.tabeller;
 public class Tabeller {
 
 	// a)
-	public static void skrivUt(int[] tabell) {
+public static void skrivUt(int[] tabell) {
 		
 			for (int i = 0; i < tabell.length; i++)
 				System.out.println("Skriv ut tabell" + i + ": " + tabell[i]);
@@ -39,38 +39,26 @@ public class Tabeller {
 	// c)
 	public static int summer(int[] tabell) {
 
-//		int sum = 0;
-//		int [] nysum = new int [tabell.length];
-//		for (int num : nysum) {
-//			for (int i = 0; i < num; i++) {	
-//				sum = num;
-//			}
-//		}
-//		return sum;
-		
-//		int sum = 0;
-//		for(int i = 0; i < tabell.length; i++) {
-//			sum += tabell[i];}
-//		return sum;
-//		
+
 		int sum = 0;
-		int j = 0;
-		while (j < tabell.length) {
-			sum += tabell[j];
-			j++;
-		}
+		for(int i = 0; i < tabell.length; i++) {
+			sum += tabell[i];}
 		return sum;
 		
-		
-		
-		
+//		Med while løkke
+//		int sum = 0;
+//		int j = 0;
+//		while (j < tabell.length) {
+//			sum += tabell[j];
+//			j++;
+//		}
+//		return sum;
+
 		// TODO
 		//throw new UnsupportedOperationException("summer ikke implementert");
 		
 	}
-	
 
-	
 	
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
@@ -82,7 +70,7 @@ public class Tabeller {
 				else
 					i++;
 			}
-		if (funnet);
+		
 		return funnet;
 		// TODO
 		//throw new UnsupportedOperationException("finnesTall ikke implementert");
