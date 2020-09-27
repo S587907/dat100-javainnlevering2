@@ -1,5 +1,5 @@
 package no.hvl.dat100.lab6.matriser;
-
+import java.util.Arrays;
 public class Matriser {
 
 	// a)
@@ -21,41 +21,52 @@ public class Matriser {
 		
 		String stri = "";
 		for (int[] row : matrise) {
-			stri += "\n";
+			
 			for(int x : row ) {
-				stri += x + " " ;
+				stri += x + " ";
 				
 			}
+			stri += "\n";
 		// TODO
 		//throw new UnsupportedOperationException("tilStreng ikke implementert");
 		}
 		return stri;
 	
 	}
-//	String stri = "[";
-//	
-//	for (int i = 0; i < tabell.length; i++) {
-//		if (i != tabell.length-1) {
-//			stri += tabell[i] + ",";	
-//	} 	else { 
-//			stri += tabell[i];	
-//	}	
-//		
-//	}
-//	return stri + "]";
+
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
+		int nymatrise[][] = new int[matrise.length][];
+		for (int i = 0; i < matrise.length; i++) {
+			nymatrise[i] = new int[matrise[i].length];
+			for (int j = 0; j < matrise[i].length; j++) {
+				nymatrise[i][j] = matrise[i][j] * tall;
+			}
+		}
+		
 		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
-	
+		//throw new UnsupportedOperationException("skaler ikke implementert");
+		
+	return nymatrise;
 	}
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
+		
+			   if (a.length != b.length) {
+			 return false;
+			   }
+			   for (int i = 0; i < a.length; i++) {
+			 if (!Arrays.equals(a[i], b[i])) {
+			  
+			     return false;
+			 }
+			   }
+			   return true;
 
 		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		//throw new UnsupportedOperationException("erLik ikke implementert");
 	}
 	
 	// e)

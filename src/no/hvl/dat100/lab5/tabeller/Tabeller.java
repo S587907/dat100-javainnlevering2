@@ -38,21 +38,32 @@ public class Tabeller {
 	
 	// c)
 	public static int summer(int[] tabell) {
-		int sum = 0;
-		for(int i = 0; i < tabell.length; i++) {
-			sum += tabell[i];}
-		return sum;
+
+//		int sum = 0;
+//		int [] nysum = new int [tabell.length];
+//		for (int num : nysum) {
+//			for (int i = 0; i < num; i++) {	
+//				sum = num;
+//			}
+//		}
+//		return sum;
 		
-		/*int sum = 0;
+//		int sum = 0;
+//		for(int i = 0; i < tabell.length; i++) {
+//			sum += tabell[i];}
+//		return sum;
+//		
+		int sum = 0;
 		int j = 0;
 		while (j < tabell.length) {
 			sum += tabell[j];
 			j++;
 		}
-		System.out.println("Total summen av tabellen: " + sum);
+		return sum;
 		
 		
-		*/
+		
+		
 		// TODO
 		//throw new UnsupportedOperationException("summer ikke implementert");
 		
